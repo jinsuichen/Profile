@@ -1,0 +1,36 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "alibaba-heavy";
+    font-weight: 900;
+    src: url("./fonts/heavy.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "alibaba-regular";
+    font-weight: 400;
+    src: url("./fonts/regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+
+h1 {
+    font-family: "alibaba-heavy", sans-serif;
+    font-size: 4.5em;
+}
+
+h2 {
+    font-family: "alibaba-heavy", sans-serif;
+    font-size: 2.2em;
+}
+
+p {
+    font-family: "alibaba-regular", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
