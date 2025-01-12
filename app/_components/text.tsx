@@ -21,6 +21,15 @@ const typeStyles = {
     'special-text': { tag: 'p', className: `${alibabaRegular.className} text-2xl font-normal` },
 };
 
+// Define the props
+interface TextProps {
+    children?: React.ReactNode;
+    type?: keyof typeof typeStyles;
+    className?: string;
+
+    [key: string]: any; // allow any other props
+}
+
 export default function Text({ children, type = 'p', className = '', ...props }) {
     const style = typeStyles[type] || typeStyles.p; // default to p if type is not found
 
